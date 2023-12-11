@@ -1,0 +1,51 @@
+#browse {
+    .browsebox {
+        .browsetop {
+            padding: 10px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            h2 {
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 48px;
+                letter-spacing: 1.44px;
+            }
+
+            .redtop {
+                display: flex;
+                align-items: center;
+            }
+
+            .redbox {
+                width: 20px;
+                height: 40px;
+                background-color: red;
+                border-radius: 25%;
+            }
+        }
+    }
+
+    .browsebottom {
+        display: flex;
+        justify-content: space-between;
+        .card {
+            width: 150px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.30);
+            span{
+                font-size: 40px;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+    }
+}

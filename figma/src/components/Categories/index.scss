@@ -1,0 +1,29 @@
+#categories {
+    .categoriesbox {
+        display: flex;
+
+        .catleft {
+            width: 20%;
+            border: 1px solid black;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                li {
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        .catright {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+        }
+    }
+}
