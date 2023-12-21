@@ -16,8 +16,8 @@ function Navbar() {
                             <ul className="navul">
                                 <li><Link to={"/"}>Home</Link></li>
                                 <li><Link to={"contact"}>Contact</Link></li>
-                                <li>About</li>
-                                <li>Sign Up</li>
+                                <li><Link to={"signup"}>About</Link></li>
+                                <li><Link to={"signup"}>Sign Up</Link></li>
                             </ul>
                         </div>
                         <div className="navright">
