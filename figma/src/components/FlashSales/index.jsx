@@ -14,7 +14,7 @@ const FlashSales = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await fetch('http://localhost:3000/');
+                const res = await fetch('http://localhost:3000/product');
                 const jsonProductData = await res.json();
                 setproductData(jsonProductData);
             } catch (error) {
@@ -99,7 +99,7 @@ const FlashSales = () => {
                             {productData && productData.map((item) => (
                                 <SwiperSlide className='flashsale_cards'>
                                     <div className='bg-img' style={{ width: '270px', height: '250px' }}>
-                                        <span>{item.discountRate}</span>
+                                        <span>-{item.abate}%</span>
                                         <img src={item.image} alt="" style={{ width: '210px', height: '180px' }} />
                                         <button className='addtowishlist'><FaRegHeart /></button>
                                         <button className='seeDetails'><IoEyeOutline /></button>

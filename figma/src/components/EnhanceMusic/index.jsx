@@ -53,7 +53,7 @@ const EnhanceYourMusicExperience = () => {
                 </div>
                 <div className='EnhanceYourMusicExperience_img'>
                     <img src={SpeakerImg} alt="" />
-                    <div className='bg'></div>
+                    {/* <div className='bg'></div> */}
                 </div>
             </div>
         </section>

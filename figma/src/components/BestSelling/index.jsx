@@ -8,7 +8,7 @@ const BestSellingProducts = () => {
     useEffect(() => {
         const fetchBestSellingData = async () => {
             try {
-                const res = await fetch('http://localhost:3000/');
+                const res = await fetch('http://localhost:3000/product');
                 const jsonBestSellingData = await res.json();
                 setBestSellingData(jsonBestSellingData);
             } catch (error) {
@@ -48,10 +48,10 @@ const BestSellingProducts = () => {
                                 </div>
 
                                 <div className='BestSellingProducts-txt'>
-                                    <h4>{item.productName}</h4>
+                                    <h4>{item.name}</h4>
                                     <div className='prices'>
-                                        <h2 style={{ color: '#DB4444' }}>${item.newprice}</h2>
-                                        <del style={{ color: '#cfcfcf', }}>{item.oldprice}</del>
+                                        <h2 style={{ color: '#DB4444' }}>${item.newPrice}</h2>
+                                        <del style={{ color: '#cfcfcf',}}>{item.oldPrice}</del>
                                     </div>
                                 </div>
                             </div>

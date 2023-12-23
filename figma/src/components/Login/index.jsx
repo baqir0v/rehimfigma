@@ -14,7 +14,7 @@ const Login = () => {
                         <input type="text" name="" id="" placeholder='E-Mail' />
                         <input type="text" name="" id="" placeholder='Password' />
                         <div className='bottom'>
-                            <button className='createbtn'>Log In</button>
+                            <button className='logbtn'>Log In</button>
                             <p>Forgot Password?</p>
                         </div>
                     </div>
