@@ -47,5 +47,10 @@
                 font-size: 20px;
             }
         }
+        .card:hover{
+            background-color: #db4444;
+            color: white;
+            cursor: pointer;
+        }
     }
 }

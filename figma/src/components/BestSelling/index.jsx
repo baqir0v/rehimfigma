@@ -51,7 +51,7 @@ const BestSellingProducts = () => {
                                     <h4>{item.name}</h4>
                                     <div className='prices'>
                                         <h2 style={{ color: '#DB4444' }}>${item.newPrice}</h2>
-                                        <del style={{ color: '#cfcfcf',}}>{item.oldPrice}</del>
+                                        <del style={{ color: '#cfcfcf',}}>${item.oldPrice}</del>
                                     </div>
                                 </div>
                             </div>

@@ -53,12 +53,11 @@
 
         .BestSellingProducts_products {
             .myBestSellingProducts {
-                display: flex;
-                align-items: center;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
 
                 .BestSellingProducts_cards {
                     width: 271px !important;
-                    margin-right: 100px !important;
 
                     .bg_image {
                         position: relative;

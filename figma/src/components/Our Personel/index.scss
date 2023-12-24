@@ -1,0 +1,50 @@
+.OurPersonals{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .OurPersonals_container{
+        margin-top: 100px;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .mySwiper{
+        .swiper-pagination-bullet{
+            background-color: #d9d9d9;
+          
+                height: 20px;
+                width: 20px;
+            
+        }
+        .swiper-pagination-bullet-active{
+         border: 5px solid #db4444;
+            background-color: white;
+            
+        }
+        .slide{
+            margin-bottom: 100px;
+            img{
+                width: 400px;
+                height: 300px;
+            }
+            h2{
+                margin-top: 15px;
+                font-size: 32px;
+            }
+            p{
+                margin-top: 20px;
+            }
+            .social_medias{
+                display: flex;
+                align-items: center;
+                margin-top: 20px;
+                gap: 30px;
+                svg{
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}

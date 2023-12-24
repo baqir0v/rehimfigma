@@ -1,0 +1,41 @@
+#squares{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .squaresdiv{
+        display: flex;
+        justify-content: space-between;
+        .square{
+            width:200px;
+            height:200px;
+            border: 1px solid rgba(0, 0, 0, 0.30);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .icon{
+                border: 5px solid gray;
+                border-radius: 100%;
+                width: 60px;
+                height: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: black;
+                color: white;
+                font-size: 25px;
+            }
+        }
+        .square:hover{
+            background-color: #DB4444;
+            color: white;
+            cursor: pointer;
+            .icon{
+                border:5px solid #e67c7c;
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+}

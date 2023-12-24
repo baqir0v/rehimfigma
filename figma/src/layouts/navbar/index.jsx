@@ -1,9 +1,10 @@
 import React from 'react'
 import "./index.scss"
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { CiHeart } from "react-icons/ci";
 import { IoCartOutline } from "react-icons/io5";
 import { FaMagnifyingGlass } from "react-icons/fa6";
+import { CgProfile } from "react-icons/cg";
 
 function Navbar() {
     return (
@@ -14,10 +15,10 @@ function Navbar() {
                         <div className="navleft">
                             <h2>Exclusive</h2>
                             <ul className="navul">
-                                <li><Link to={"/"}>Home</Link></li>
-                                <li><Link to={"contact"}>Contact</Link></li>
-                                <li><Link to={"signup"}>About</Link></li>
-                                <li><Link to={"signup"}>Sign Up</Link></li>
+                                <li><NavLink activeClassName="navlink" to={"/"}>Home</NavLink></li>
+                                <li><NavLink to={"contact"}>Contact</NavLink></li>
+                                <li><NavLink to={"about"}>About</NavLink></li>
+                                <li><NavLink to={"signup"}>Sign Up</NavLink></li>
                             </ul>
                         </div>
                         <div className="navright">
@@ -29,8 +30,9 @@ function Navbar() {
                                         <FaMagnifyingGlass />
                                     </span>
                                 </div>
-                                <i><CiHeart /></i>
-                                <i><IoCartOutline /></i>
+                                <i><NavLink to={"/account"}><CiHeart /></NavLink></i>
+                                <i><NavLink to={"/basket"}><IoCartOutline /></NavLink></i>
+                                <i><NavLink to={"/wishlist"}><CgProfile /></NavLink></i>
                             </div>
                         </div>
                     </div>
